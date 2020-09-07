@@ -525,7 +525,7 @@ let res = await db.collection('articles').where({
 const dbCmd = db.command
 const myOpenID = "xxx"
 let res = await db.collection('articles').where({
-  _openid: dbCmd.eq(openid)
+  _openid: dbCmd.eq(myOpenID)
 }).get()
 ```
 
